@@ -1,0 +1,83 @@
+/* Base Styles */
+h1.page-header{
+    font-family:'Inknut Antiqua',serif;
+    width:80%;
+    margin:auto;
+    text-align:center;
+    text-shadow: 4px 4px 4px #aaa;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 10px;
+}
+
+header, footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+pre {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 10px;
+    overflow: auto;
+}
+
+/* Specific Styles for Demonstrating Selectors */
+.highlight {
+    color: blue;
+    font-weight: bold;
+    background-color: #e0e0ff; /* Light blue background for visibility */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#id-div {
+    background-color: yellow; /* Ensures visibility of the ID selector */
+    padding: 10px;
+    border: 1px solid black; /* Make the div distinct */
+}
+
+div#id-div.highlight {
+    border: 2px solid red; /* Demonstrates the compound selector */
+    margin-top: 10px;
+    position: relative;
+}
+
+/* Enhancing Navigation Links */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    font-size: 0.8em;
+    color: #555;
+}

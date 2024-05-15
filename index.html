@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Selectors by MEAS KASSAHUN</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+    <body>
+    <header>
+        <h1 class="page-header"> CSS Selectors by MEAS KASSAHUN</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#class">Class Selector</a></li>
+            <li><a href="#compound">Compound Selector</a></li>
+            <li><a href="#descendant">Descendant Selector</a></li>
+        </ul>
+    </nav>
+
+    <fieldset>
+        <legend><a id="class">Class Selector</a></legend>
+        <p>Classes can be applied to multiple items on a page. They are ideal for reusing styles on different elements.</p>
+        <p>Here's how we hook a class attribute to an element:</p>
+        <pre><code>class="highlight"</code></pre>
+        <p>Here's how the CSS is applied to the element:</p>
+        <pre><code>.highlight {
+            color: blue;
+            font-weight: bold;
+        }</code></pre>
+        <p>Example:</p>
+        <p class="highlight">This paragraph is styled using a class selector.</p>
+    </fieldset>
+
+    <fieldset>
+        <legend><a id="compound">Compound Selector</a></legend>
+        <p>Compound selectors combine more than one selector, specifying multiple conditions. Here, we use a class and an ID together.</p>
+        <p>Here's an example of a compound selector:</p>
+        <pre><code>div#id-div.highlight</code></pre>
+        <p>Here's how the CSS is applied:</p>
+        <pre><code>div#id-div.highlight {
+            border: 2px solid red;
+            background-color: yellow;
+        }</code></pre>
+        <p>Example:</p>
+        <div id="id-div" class="highlight">This div uses a compound selector (class + ID).</div>
+    </fieldset>
+  <fieldset>
+      <legend><a id="descendant">Descendant Selector</a></legend>
+      <p>This selector targets all specific descendants within a parent element.</p>
+      <pre><code>.highlight ul li {
+          color: blue;
+      }</code></pre>
+      <p>Example:</p>
+      <div class="highlight"> <!-- Applying class 'highlight' to a container -->
+          <ul>
+              <li>Meas was here 1 (blue)</li>
+              <li>Meas was here 2 (blue)</li>
+          </ul>
+      </div>
+  </fieldset>
+
+
+
+    <footer>
+        <p>&copy; 2024 MEAS KASSAHUN. All rights reserved.</p>
+    </footer>
+</body>
+</html>
